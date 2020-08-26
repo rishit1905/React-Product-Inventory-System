@@ -12,9 +12,9 @@ class Dashboard extends React.Component {
             mobiles: 0,
             laptops: 0,
             cameras: 0,
-            brandData:[[]],
-            stockData:[[]],
-            priceData:[[]]
+            brandData: [[]],
+            stockData: [[]],
+            priceData: [[]]
         }
     }
 
@@ -54,38 +54,38 @@ class Dashboard extends React.Component {
     }
 
     datab = (products) => {
-        let brand=[["Brand","Stock"]]
-        for(const data of products){
-            if(brand.includes(data.brand)){
-                var a=brand.indexOf(brand.name)
+        let brand = [["Brand", "Stock"]]
+        for (const data of products) {
+            if (brand.includes(data.brand)) {
+                var a = brand.indexOf(brand.name)
                 console.log(a)
             }
-            else{
-                brand.push([data.brand,parseInt(data.stock)])
+            else {
+                brand.push([data.brand, parseInt(data.stock)])
             }
-            
+
         }
         console.log(brand)
-        this.setState({brandData:brand})
+        this.setState({ brandData: brand })
     }
 
     datas = (products) => {
-        let stock=[["Product","Stock"]]
-        for(const data of products){
-               stock.push([data.name,parseInt(data.stock)])
-            
+        let stock = [["Product", "Stock"]]
+        for (const data of products) {
+            stock.push([data.name, parseInt(data.stock)])
+
         }
         console.log(stock)
-        this.setState({stockData:stock})
+        this.setState({ stockData: stock })
     }
 
     datap = (products) => {
-        let price=[["Product","Price"]]
-        for(const data of products){
-                price.push([data.name,parseInt(data.price)])            
+        let price = [["Product", "Price"]]
+        for (const data of products) {
+            price.push([data.name, parseInt(data.price)])
         }
         console.log(price)
-        this.setState({priceData:price})
+        this.setState({ priceData: price })
     }
 
     render() {
@@ -95,6 +95,7 @@ class Dashboard extends React.Component {
                     <section id="category">
                         <p>Category</p>
                         <Chart
+                            width="100%"
                             chartType="BarChart"
                             loader={<div>Loading Chart...</div>}
                             data={[
@@ -115,6 +116,7 @@ class Dashboard extends React.Component {
                     <section id="vendor">
                         <p>Vendor</p>
                         <Chart
+                            width="100%"
                             chartType="PieChart"
                             loader={<div>Loading Chart...</div>}
                             data={this.state.brandData}
@@ -130,6 +132,7 @@ class Dashboard extends React.Component {
                     <section id="stock">
                         <p>Stock</p>
                         <Chart
+                            width="100%"
                             chartType="Histogram"
                             loader={<div>Loading Chart...</div>}
                             data={this.state.stockData}
@@ -146,6 +149,7 @@ class Dashboard extends React.Component {
                     <section id="priceDashboard">
                         <p>Price</p>
                         <Chart
+                            width="100%"
                             chartType="ScatterChart"
                             loader={<div>Loading Chart...</div>}
                             data={this.state.priceData}

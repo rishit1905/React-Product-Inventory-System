@@ -1,9 +1,14 @@
+.row{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
 section {
-    display: block;
-    float: left;
-    width: 495px;
+    display: flex;
+    flex-direction: column;
+    width: 345px;
     height:310px;
-    margin: 0.7rem 0.35rem 0 0.35rem;
+    margin:0.5rem;
     text-align: center;
     box-shadow: 0 0 1rem black;
     background: white;
@@ -13,12 +18,7 @@ section:hover{
     cursor: pointer;
 }
 
-.row:after{
-    clear: both;
-    display: block;
-}
-
-#priceDashboard{
+/* #priceDashboard{
     display: block;
     float: left;
     width: 495px;
@@ -27,4 +27,4 @@ section:hover{
     text-align: center;
     box-shadow: 0 0 1rem black;
     background: white;
-}
+} */

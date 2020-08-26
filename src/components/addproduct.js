@@ -186,49 +186,40 @@ class AddProduct extends React.Component {
     render() {
         const { errors } = this.state;
         return (
-            <div id="add">
+            <div>
                 <form onChange={this.handleSubmit} noValidate>
                     <fieldset>
                         <legend>ADD PRODUCT</legend>
-                        <div className="columns">
                             <label>Image:</label>
                             <input type="file" id="imageURL" onChange={this.getUrl} multiple accept="image/*" noValidate />
                             {errors.imageError.length > 0 && <span className="error">{errors.imageError}</span>}
-                            <br /><br />
                             <label>Product Name:</label>
-                            <input type="text" id="name" onChange={this.getName} noValidate />
+                            <input type="text" id="name" placeholder="Enter name*" onChange={this.getName} noValidate />
                             {errors.nameError.length > 0 && <span className="error">{errors.nameError}</span>}
-                            <br /><br />
                             <label>Brand:</label>
-                            <input type="text" id="brand" onChange={this.getBrand} noValidate />
+                            <input type="text" id="brand" placeholder="Enter brand*" onChange={this.getBrand} noValidate />
                             {errors.brandError.length > 0 && <span className="error">{errors.brandError}</span>}
-                            <br /><br />
                             <label>Description:</label>
-                            <input type="text" id="description" onChange={this.getDescription} noValidate />
+                            <input type="text" id="description" placeholder="Enter description*" onChange={this.getDescription} noValidate />
                             {errors.descriptionError.length > 0 && <span className="error">{errors.descriptionError}</span>}
-                            <br /><br />
                             <label>Category:</label>
                             <select defaultValue={this.state.category} id="category" onChange={this.getCategory}>
                                 <option value="">--select--</option>
                                 <option value="Mobiles">Mobiles</option>
                                 <option value="Cameras">Cameras</option>
                                 <option value="Laptops">Laptops</option>
-                            </select><br /><br />
+                            </select>
                             {errors.categoryError.length > 0 && <span className="error">{errors.categoryError}</span>}
                             <label>Price:</label>
-                            <input type="text" id="price" onChange={this.getPrice} noValidate />
+                            <input type="text" id="price" placeholder="Enter price*" onChange={this.getPrice} noValidate />
                             {errors.priceError.length > 0 && <span className="error">{errors.priceError}</span>}
-                            <br /><br />
                             <label>Stock:</label>
-                            <input type="text" id="stock" onChange={this.getStock} noValidate />
+                            <input type="text" id="stock"  placeholder="Enter stock*" onChange={this.getStock} noValidate />
                             {errors.stockError.length > 0 && <span className="error">{errors.stockError}</span>}
-                            <br /><br />
-                        </div>
                         <button data-testid="addbutton" onClick={this.addProduct} disabled={this.state.buttonStatus}>Add</button>
                     </fieldset>
                 </form>
             </div>
-
         );
     }
 }

@@ -85,7 +85,7 @@ class Inventory extends React.Component {
     renderAllProducts = () => {
         if (this.state.searchValue !== "") {
             if (this.state.filteredProducts.length === 0) {
-                return ( 
+                return (
                     <tr className="notd">
                         <td><p>No such product found !</p></td>
                     </tr>
@@ -135,9 +135,11 @@ class Inventory extends React.Component {
 
     render() {
         return (
-            <div className="row">
-                <button data-testid="inventorybutton" className="inventoryButton" onClick={this.goToAddProduct}>Add Product</button>
-                <input type="search" placeholder="Search" value={this.state.searchValue} onChange={this.searchProduct} />
+            <div>
+                <div id="elem">
+                    <button data-testid="inventorybutton" className="inventoryButton" onClick={this.goToAddProduct}>Add Product</button>
+                    <input type="search" id="inv" placeholder="Search" value={this.state.searchValue} onChange={this.searchProduct} />
+                </div>
                 <table id="product">
                     <tbody>
                         {this.renderAllProducts()}

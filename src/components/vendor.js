@@ -93,8 +93,8 @@ class Vendor extends React.Component {
         if (this.state.searchValue !== "") {
             if (this.state.filteredProducts.length === 0) {
                 return (
-                    <tr>
-                        <td>No such vendor found !!</td>
+                    <tr className="notd">
+                        <td><p>No such vendor found !</p></td>
                     </tr>
                 )
             }
@@ -141,15 +141,9 @@ class Vendor extends React.Component {
     }
 
     render() {
-        let searchstyle = {
-            width: "96%",
-            display: "block",
-            margin: "1rem 2.1rem 0 0",
-            background: "white",
-        }
         return (
             <div className="row">
-                <input type="search" placeholder="Search Brand" value={this.state.searchValue} onChange={this.searchBrand} style={searchstyle} />
+                <input type="search" className="cat" placeholder="Search Brand" value={this.state.searchValue} onChange={this.searchBrand} />
                 <table id="product">
                     <tbody>
                         {this.renderAllProducts()}

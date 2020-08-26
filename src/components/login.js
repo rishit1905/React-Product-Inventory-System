@@ -91,11 +91,11 @@ class Login extends React.Component {
         const { errors } = this.state;
         return (
             <div className="log">
-                <img src="./image/Profile.png" alt="" />
                 <form onChange={this.handleSubmit} noValidate>
+                    <img src="./image/Profile.png" alt="" />
                     <input type="email" id="username" placeholder="Username" onChange={this.getUsername} required noValidate />
                     {errors.username.length > 0 && <span className='error'>{errors.username}</span>}
-                    <input type="password" id="password" placeholder="Password" onChange={this.getPassword} required noValidate /><br />
+                    <input type="password" id="password" placeholder="Password" onChange={this.getPassword} required noValidate />
                     {errors.password.length > 0 && <span className='error'>{errors.password}</span>}
                     <button id="login" onClick={this.authorize} disabled={this.state.buttonStatus}>Login</button>
                     <Link to="/signup" id="#signup">New User? Signup</Link>

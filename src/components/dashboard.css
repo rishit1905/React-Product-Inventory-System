@@ -2,13 +2,14 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    
 }
 section {
     display: flex;
     flex-direction: column;
     width: 345px;
-    height:310px;
     margin:0.5rem;
+    padding: 10px;
     text-align: center;
     box-shadow: 0 0 1rem black;
     background: white;
@@ -17,14 +18,3 @@ section {
 section:hover{
     cursor: pointer;
 }
-
-/* #priceDashboard{
-    display: block;
-    float: left;
-    width: 495px;
-    height:310px;
-    margin:0.6rem 32rem 0.5rem 32rem;
-    text-align: center;
-    box-shadow: 0 0 1rem black;
-    background: white;
-} */

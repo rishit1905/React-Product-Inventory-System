@@ -94,8 +94,8 @@ class Category extends React.Component {
         if (this.state.searchValue !== "") {
             if (this.state.filteredProducts.length === 0) {
                 return (
-                    <tr>
-                        <td>No such category found !!</td>
+                    <tr className="notd">
+                        <td><p>No such category found !</p></td>
                     </tr>
                 )
             }
@@ -142,15 +142,9 @@ class Category extends React.Component {
     }
 
     render() {
-        let searchstyle = {
-            width: "96%",
-            display: "block",
-            margin: "1rem 2.1rem 0 0",
-            background: "white",
-        }
         return (
             <div className="row">
-                <input type="search" placeholder="Search Category" value={this.state.searchValue} onChange={this.searchCategory} style={searchstyle} />
+                <input className="cat" type="search" placeholder="Search Category" value={this.state.searchValue} onChange={this.searchCategory} />
                 <table id="product">
                     <tbody>
                         {this.renderAllProducts()}

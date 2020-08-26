@@ -6,9 +6,9 @@ class HeaderFooter extends React.Component {
 
     render() {
         return (
-
-            <HeaderContent></HeaderContent>
-
+            <div id="hf">
+                <HeaderContent></HeaderContent>
+            </div>
         );
     }
 }

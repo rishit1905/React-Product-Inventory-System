@@ -6,31 +6,22 @@ class DashboardHead extends React.Component {
     state = {}
     render() {
         return (
-            <header>
-                <div className="element">
+            <div className="header-container">
+                <div className="item1">
                     <p>DASHBOARD</p>
                 </div>
-                <div className="tables">
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <Link to="/inventory">
-                                        <button className="headerButton">Inventory</button>
-                                    </Link>
-                                </td>
-                                <td>
-                                    <Link to="/">
-                                        <button className="headerButton">Signout</button>
-                                    </Link>
-                                </td>
-                                <td><img className="profile" src="./image/Profile.png" alt="" /></td>
-                            </tr>
-                        </tbody>
-
-                    </table>
+                <div className="item2">
+                    <Link to="/inventory">
+                        <button className="headerButton">Inventory</button>
+                    </Link>
                 </div>
-            </header>
+                <div className="item3">
+                    <Link to="/">
+                        <button className="headerButton">Signout</button>
+                    </Link>
+                </div>
+            </div>
+
         );
     }
 }

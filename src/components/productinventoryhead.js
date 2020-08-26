@@ -5,7 +5,7 @@ class ProductInventoryHead extends React.Component {
     state = {}
     render() {
         return (
-            <header>
+            <header id="header">
                 <p>PRODUCT INVENTORY SYSTEM </p>
             </header>
          );

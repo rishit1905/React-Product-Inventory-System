@@ -1,4 +1,4 @@
-header {
+#header {
     background: rgb(39, 38, 38);
     display: flex;
     justify-content: center;
@@ -7,6 +7,6 @@ header {
     text-align: center;
 }
 
-p{
+#header p{
     font-size: larger;
 }

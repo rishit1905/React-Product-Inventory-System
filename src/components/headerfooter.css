@@ -1,41 +1,29 @@
-header {
+.header-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
     background: rgb(39, 38, 38);
+}
+
+.header-container .item1 {
+    flex-grow: 8;
     color: azure;
-    display: block;
-    left: 0;
-    right: 0;
-    top: 0;
+    margin-left: 1rem;
+    font-size: larger;
 }
 
-.element {
-    float: left;
-    margin: 0.3rem 0 0.3rem 6rem;
-}
-
-.tables {
-    float: right;
-    margin: 0.3rem 2rem 0.3rem 0;
-}
-
-td {
-    width: 70px;
-    text-align: center;
-    vertical-align: middle;
+.header-container .item2, .header-container .item3 {
+    flex-grow: 0.5;
 }
 
 .headerButton {
     background: rgb(39, 38, 38);
     color: white;
     border-radius: 10px;
-    padding:5px;
+    padding: 5px;
     border: 0px;
     transition: all 0.2s ease-in;
-}
-
-input[type=search]{
-    text-align: center;
-    border: none;
-    padding: 10px;
+    cursor: pointer;
 }
 
 .headerButton:hover {
@@ -45,13 +33,14 @@ input[type=search]{
     padding-right: 50px;
     border-radius: 10px;
     border: 0px;
+    cursor: pointer;
     transition: all 0.2s ease-in;
 }
+/*
 
-.profile {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: rgb(226, 226, 226);
+input[type=search]{
+    text-align: center;
+    border: none;
+    padding: 10px;
 }
-
+*/

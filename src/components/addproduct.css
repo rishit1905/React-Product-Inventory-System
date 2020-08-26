@@ -42,6 +42,7 @@ fieldset input::placeholder{
 
 fieldset label{
     font-weight: 600;
+    margin-top: 0.5rem;
 }
 
 fieldset button{

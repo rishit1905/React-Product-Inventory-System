@@ -91,77 +91,77 @@ class Dashboard extends React.Component {
     render() {
         return (
             <div className="row">
-                <Link to="/category">
-                    <section id="category">
-                        <p>Category</p>
-                        <Chart
-                            width="100%"
-                            chartType="BarChart"
-                            loader={<div>Loading Chart...</div>}
-                            data={[
-                                ['Category', 'Stock'],
-                                ['Mobiles', this.state.mobiles],
-                                ['Cameras', this.state.cameras],
-                                ['Laptops', this.state.laptops],
-                            ]}
-                            options={{
-                                title: 'Category-wise stock',
-                                legend: { position: 'none' },
-                                colors: ['green'],
-                            }}
-                        />
-                    </section>
-                </Link>
-                <Link to="/vendor">
-                    <section id="vendor">
-                        <p>Vendor</p>
-                        <Chart
-                            width="100%"
-                            chartType="PieChart"
-                            loader={<div>Loading Chart...</div>}
-                            data={this.state.brandData}
-                            options={{
-                                title: 'Brand-based Stock',
-                                // Just add this option
-                                is3D: true,
-                            }}
-                        />
-                    </section>
-                </Link>
-                <Link to="/stock">
-                    <section id="stock">
-                        <p>Stock</p>
-                        <Chart
-                            width="100%"
-                            chartType="Histogram"
-                            loader={<div>Loading Chart...</div>}
-                            data={this.state.stockData}
-                            options={{
-                                title: 'Brand-based Stock',
-                                legend: { position: 'top', maxLines: 2 },
-                                colors: ['#5C3292'],
-                                interpolateNulls: false,
-                            }}
-                        />
-                    </section>
-                </Link>
-                <Link to="/price">
-                    <section id="priceDashboard">
-                        <p>Price</p>
-                        <Chart
-                            width="100%"
-                            chartType="ScatterChart"
-                            loader={<div>Loading Chart...</div>}
-                            data={this.state.priceData}
-                            options={{
-                                title: 'Charges of subatomic particles',
-                                legend: { position: 'top', maxLines: 2 },
-                                colors: ['#871B47'],
-                                interpolateNulls: false,
-                            }}
-                        />
-                    </section>
-                </Link>
+
+                <section id="category">
+                    <Link to="/category"><p>Category</p>  </Link>
+                    <Chart
+                        width="100%"
+                        chartType="BarChart"
+                        loader={<div>Loading Chart...</div>}
+                        data={[
+                            ['Category', 'Stock'],
+                            ['Mobiles', this.state.mobiles],
+                            ['Cameras', this.state.cameras],
+                            ['Laptops', this.state.laptops],
+                        ]}
+                        options={{
+                            title: 'Category-wise stock',
+                            legend: { position: 'none' },
+                            colors: ['green'],
+                        }}
+                    />
+                </section>
+
+
+                <section id="vendor">
+                    <Link to="/vendor"><p>Vendor</p></Link>
+                    <Chart
+                        width="100%"
+                        chartType="PieChart"
+                        loader={<div>Loading Chart...</div>}
+                        data={this.state.brandData}
+                        options={{
+                            title: 'Brand-based Stock',
+                            // Just add this option
+                            is3D: true,
+                        }}
+                    />
+                </section>
+
+
+                <section id="stock">
+                    <Link to="/stock"> <p>Stock</p></Link>
+                    <Chart
+                        width="100%"
+                        chartType="Histogram"
+                        loader={<div>Loading Chart...</div>}
+                        data={this.state.stockData}
+                        options={{
+                            title: 'Brand-based Stock',
+                            legend: { position: 'top', maxLines: 2 },
+                            colors: ['#5C3292'],
+                            interpolateNulls: false,
+                        }}
+                    />
+                </section>
+
+
+                <section id="priceDashboard">
+                    <Link to="/price"><p>Price</p></Link>
+                    <Chart
+                        width="100%"
+                        chartType="ScatterChart"
+                        loader={<div>Loading Chart...</div>}
+                        data={this.state.priceData}
+                        options={{
+                            title: 'Charges of subatomic particles',
+                            legend: { position: 'top', maxLines: 2 },
+                            colors: ['#871B47'],
+                            interpolateNulls: false,
+                        }}
+                    />
+                </section>
+
             </div>
         );
     }

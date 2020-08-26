@@ -108,25 +108,19 @@ class Signup extends React.Component {
     render() {
         const { errors } = this.state;
         return (
-            <div>
                 <div className="logsign">
                     <form onChange={this.handleSubmit} noValidate>
                         <input type="file" onChange={this.getImage} placeholder="Choose profile picture !" accept="image/*" alt="profile-icon-9.png" />
                         {errors.image.length > 0 && <span className='error'>{errors.image}</span>}
                         <input id="username" type="email" onChange={this.getUsername} noValidate placeholder="Email" required />
                         {errors.username.length > 0 && <span className='error'>{errors.username}</span>}
-                        <br />
                         <input id="password" type="password" onChange={this.getPassword} noValidate placeholder="Password" required />
                         {errors.password.length > 0 && <span className='error'>{errors.password}</span>}
-                        <br />
                         <input id="confirmpassword" type="password" onChange={this.confirmPassword} noValidate placeholder="Confirm Password" required />
                         {errors.confirmpassword.length > 0 && <span className='error'>{errors.confirmpassword}</span>}
-                        <br />
                         <button data-testid="signup" onClick={this.authorize} className="centersign" disabled={this.state.buttonStatus}>Create Account</button>
                     </form>
                 </div>
-            </div>
-
         );
     }
 }

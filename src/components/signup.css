@@ -1,13 +1,23 @@
-.logsign {
-    background: white;
+ .logsign {
+    display:flex;
+    flex-direction: column;
     text-align: center;
-    width: 500px;
-    height:450px;
-    margin: auto;
-    padding: 7.5rem 0 0 0;
-    border-radius: 10px;
-    transform: translateY(50px);
+    justify-content: center;
+    align-items: center;
+    transform: translateY(18%) ;
+    padding:1rem;
+}
+
+.logsign form{
+    width:30%;
+    display:flex;
+    background: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     box-shadow: 0 0 1rem black;
+    border-radius: 20px;
+    padding: 3.5rem;
 }
 
 .logsign input {
@@ -15,9 +25,8 @@
     text-align: center;
     background: rgb(189, 188, 188);
     border: 0px;
-    box-sizing: border-box;
-    width:400px;
-    margin: 0.5rem 0 0.5rem 0;
+    width:50%;
+    margin-top: 1rem;
     transition: all 0.4s ease-in;
 }
 
@@ -36,8 +45,9 @@
 .logsign button {
     background: rgb(76, 76, 230);
     color: white;
-    padding: 10px 30px 10px 30px;
-    margin: 0.5rem 6rem 0.5rem 6rem;
+    padding: 3% 10% 3% 10%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     border-radius: 10px;
     border: 0px;
     transition: all 0.2s ease-in;
@@ -46,8 +56,9 @@
 .logsign button:hover {
     background: rgb(37, 37, 158);
     color: white;
-    padding: 10px 40px 10px 40px;
-    margin: 0.5rem 5rem 0.5rem 5rem;
+    padding: 3% 12% 3% 12%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     border-radius: 10px;
     border: 0px;
     transition: all 0.2s ease-in;
@@ -56,18 +67,9 @@
 .logsign button:disabled {
     background: rgb(38, 38, 44);
     color: white;
-    padding: 10px 30px 10px 30px;
-    margin: 0.5rem 6rem 0.5rem 6rem;
-    border-radius: 10px;
-    border: 0px;
-    transition: all 0.2s ease-in;
-}
-
-.logsign button:disabled:hover{
-    background: rgb(38, 38, 44);
-    color: white;
-    padding: 10px 40px 10px 40px;
-    margin: 0.5rem 5rem 0.5rem 5rem;
+    padding: 3% 12% 3% 12%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     border-radius: 10px;
     border: 0px;
     transition: all 0.2s ease-in;
@@ -76,5 +78,5 @@
 .error {
     color: #db2269;
     font-size: small;
-    display: block;
+    margin:0 1rem 0 1rem;
 }

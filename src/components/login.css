@@ -20,7 +20,7 @@
     padding-bottom: 3.5rem;
 }
 
-form img {
+.log img {
     width: 40%;
     height: 40%;
     padding: 5px;
@@ -28,7 +28,7 @@ form img {
     border-radius: 50%;
 }
 
-form input {
+.log input {
     padding: 10px;
     text-align: center;
     background: rgb(189, 188, 188);
@@ -38,19 +38,18 @@ form input {
     transition: all 0.4s ease-in;
 }
 
-form input::placeholder {
+.log input::placeholder {
     color: rgb(87, 85, 85);
 }
 
-form input:hover {
+.log input:hover {
     padding: 10px;
     text-align: center;
     color: rgb(19, 18, 18);
     background: rgb(168, 167, 167);
     transition: all 0.4s ease-in;
 }
-
-form button {
+.log button {
     background: rgb(76, 76, 230);
     color: white;
     padding: 3% 10% 3% 10%;
@@ -61,7 +60,7 @@ form button {
     transition: all 0.2s ease-in;
 }
 
-form button:hover {
+.log button:hover {
     background: rgb(37, 37, 158);
     color: white;
     padding: 3% 12% 3% 12%;
@@ -72,7 +71,7 @@ form button:hover {
     transition: all 0.2s ease-in;
 }
 
-form button:disabled {
+.log button:disabled {
     background: rgb(38, 38, 44);
     color: white;
     padding: 3% 12% 3% 12%;
@@ -91,6 +90,5 @@ form button:disabled {
 .error {
     color: #db2269;
     font-size: small;
-    display: block;
     margin:0 1rem 0 1rem;
 }

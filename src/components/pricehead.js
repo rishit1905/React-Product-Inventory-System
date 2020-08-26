@@ -6,36 +6,26 @@ class PriceHead extends React.Component {
     state = {}
     render() {
         return (
-            <header>
-                <div className="element">
+            <div className="header-container">
+                <div className="item1">
                     <p>PRICE BASED</p>
                 </div>
-                <div className="tables">
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <Link to="/dashboard">
-                                        <button className="headerButton">Dashboard</button>
-                                    </Link>
-                                </td>
-                                <td>
-                                    <Link to="/inventory">
-                                        <button className="headerButton">Inventory</button>
-                                    </Link>
-                                </td>
-                                <td>
-                                    <Link to="/">
-                                        <button className="headerButton">Signout</button>
-                                    </Link>
-                                </td>
-                                <td><img className="profile" src="./image/Profile.png" alt="" /></td>
-                            </tr>
-                        </tbody>
-
-                    </table>
+                <div className="item2">
+                    <Link to="/dashboard">
+                        <button className="headerButton">Dashboard</button>
+                    </Link>
                 </div>
-            </header>
+                <div className="item3">
+                    <Link to="/inventory">
+                        <button className="headerButton">Inventory</button>
+                    </Link>
+                </div>
+                <div className="item4">
+                    <Link to="/">
+                        <button className="headerButton">Signout</button>
+                    </Link>
+                </div>
+            </div>
         );
     }
 }

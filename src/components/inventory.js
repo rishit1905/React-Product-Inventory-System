@@ -86,8 +86,8 @@ class Inventory extends React.Component {
         if (this.state.searchValue !== "") {
             if (this.state.filteredProducts.length === 0) {
                 return ( 
-                    <tr>
-                        <td>No such product found !!</td>
+                    <tr className="notd">
+                        <td><p>No such product found !</p></td>
                     </tr>
                 )
             }

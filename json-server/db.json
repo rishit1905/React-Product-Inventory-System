@@ -1,0 +1,121 @@
+{
+  "products": [
+    {
+      "imageURL": "mob1.jpg",
+      "name": "One Plus",
+      "brand": "One Plus",
+      "description": "Mobiles to use",
+      "category": "Mobiles",
+      "price": "47000",
+      "stock": "13",
+      "id": 3
+    },
+    {
+      "imageURL": "lap1.jpg",
+      "name": "HP Laptop",
+      "brand": "HP",
+      "description": "Laptops to use",
+      "category": "Laptops",
+      "price": "89099",
+      "stock": "5",
+      "id": 4
+    },
+    {
+      "imageURL": "lap2.jpg",
+      "name": "Dell Inspiron",
+      "brand": "Dell",
+      "description": "Laptops to use",
+      "category": "Laptops",
+      "price": "115000",
+      "stock": "153",
+      "id": 5
+    },
+    {
+      "imageURL": "lap.jpg",
+      "name": "ASUS Classic",
+      "brand": "Asus",
+      "description": "Laptop to use",
+      "category": "Laptops",
+      "price": "51000",
+      "stock": "98",
+      "id": 6
+    },
+    {
+      "imageURL": "cannon.jpg",
+      "name": "Cannon EOS",
+      "brand": "Canon",
+      "description": "Camera to use",
+      "category": "Cameras",
+      "price": "28000",
+      "stock": "176",
+      "id": 7
+    },
+    {
+      "imageURL": "sony.jpg",
+      "name": "Sony Camera",
+      "brand": "Sony",
+      "description": "Cameras to use",
+      "category": "Cameras",
+      "price": "30000",
+      "stock": "52",
+      "id": 8
+    },
+    {
+      "imageURL": "nikon2.jpg",
+      "name": "Nikon D750",
+      "brand": "Nikon",
+      "description": "Camera at its best",
+      "category": "Cameras",
+      "price": "178550",
+      "stock": "15",
+      "id": 9
+    },
+    {
+      "imageURL": "down.jpg",
+      "name": "Redmi K20 Pro",
+      "brand": "Xiaomi",
+      "description": "6Gb+128GB Variant",
+      "category": "Mobiles",
+      "price": "25999",
+      "stock": "54",
+      "id": 10
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "image": "Profile.png",
+      "username": "abcd@gmail.com",
+      "password": "1234abcd",
+      "confirmpassword": "1234abcd"
+    },
+    {
+      "image": "Profile.png",
+      "username": "abcdef1234@gmail.com",
+      "password": "abcd1234",
+      "confirmpassword": "abcd1234",
+      "id": 2
+    },
+    {
+      "image": "Profile.png",
+      "username": "rish@gmail.com",
+      "password": "abcd1234",
+      "confirmpassword": "abcd1234",
+      "id": 3
+    },
+    {
+      "image": "Profile.png",
+      "username": "rishabhnag1997@gmail.com",
+      "password": "abcd1234",
+      "confirmpassword": "abcd1234",
+      "id": 4
+    },
+    {
+      "image": "Profile.png",
+      "username": "abcd@gmail.com",
+      "password": "abcd1234",
+      "confirmpassword": "abcd1234",
+      "id": 5
+    }
+  ]
+}

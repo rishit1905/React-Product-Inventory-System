@@ -1,0 +1,30 @@
+section {
+    display: block;
+    float: left;
+    width: 495px;
+    height:310px;
+    margin: 0.7rem 0.35rem 0 0.35rem;
+    text-align: center;
+    box-shadow: 0 0 1rem black;
+    background: white;
+}
+
+section:hover{
+    cursor: pointer;
+}
+
+.row:after{
+    clear: both;
+    display: block;
+}
+
+#priceDashboard{
+    display: block;
+    float: left;
+    width: 495px;
+    height:310px;
+    margin:0.6rem 32rem 0.5rem 32rem;
+    text-align: center;
+    box-shadow: 0 0 1rem black;
+    background: white;
+}

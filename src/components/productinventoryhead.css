@@ -1,0 +1,15 @@
+header {
+    background: rgb(39, 38, 38);
+    overflow: hidden;
+    color: azure;
+    text-align: center;
+    /* position: fixed;
+    left: 0;
+    right: 0;
+    top: 0; */
+}
+
+header:after {
+    display: block;
+    clear: both;
+}

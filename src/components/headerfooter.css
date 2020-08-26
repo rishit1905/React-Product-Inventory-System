@@ -1,0 +1,57 @@
+header {
+    background: rgb(39, 38, 38);
+    color: azure;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.element {
+    float: left;
+    margin: 0.3rem 0 0.3rem 6rem;
+}
+
+.tables {
+    float: right;
+    margin: 0.3rem 2rem 0.3rem 0;
+}
+
+td {
+    width: 70px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.headerButton {
+    background: rgb(39, 38, 38);
+    color: white;
+    border-radius: 10px;
+    padding:5px;
+    border: 0px;
+    transition: all 0.2s ease-in;
+}
+
+input[type=search]{
+    text-align: center;
+    border: none;
+    padding: 10px;
+}
+
+.headerButton:hover {
+    background: rgb(29, 28, 28);
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 10px;
+    border: 0px;
+    transition: all 0.2s ease-in;
+}
+
+.profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgb(226, 226, 226);
+}
+

@@ -1,0 +1,126 @@
+#product tr {
+    display: block;
+    float: left;
+    width: 310px;
+    margin: 1.5rem 1.6rem 0.5rem 1.6rem;
+    padding: 0 0 0.5rem 1rem;
+    background: white;
+    box-shadow: 0 0 1rem black;
+    text-align: center;
+}
+
+#product td {
+    display: block;
+    text-align: left;
+    margin: 0 0.5rem 0 0.5rem;
+    width: 100%;
+}
+
+#product td img {
+    display: block;
+    margin: 1.5rem 1.5rem 2rem 2.5rem;
+    height: 200px;
+    border-radius: 0%;
+    background: rgb(255, 255, 255);
+}
+
+#product td button{
+    display: block;
+    float: left;
+    margin:2.5rem 0.5rem 0.5rem 0;
+    background: rgb(173, 42, 42);
+    color: white;
+    padding:10px 30px 10px 30px;
+    border-radius: 0%;
+    border: 0px;
+    transition: all 0.2s ease-in;
+}
+
+#product td #deleteButton{
+    float: right;
+    margin:2.35rem 2.2rem 0.5rem 0;
+    background: rgb(81, 23, 146);
+}
+
+#product td button:hover{
+    background: rgb(231, 54, 54);
+    transition: all 0.2s ease-in;
+}
+
+#product td #deleteButton:hover{
+    background: rgb(106, 29, 194);
+    transition: all 0.2s ease-in;
+}
+
+.inventoryButton {
+    display: inline;
+    background: rgb(76, 76, 230);
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding:10px 30px 10px 30px;
+    border-radius: 10px;
+    border: 0px;
+    transition: all 0.2s ease-in;
+}
+
+.inventoryButton:hover {
+    background: rgb(37, 37, 158);
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding:10px 30px 10px 30px;
+    border-radius: 10px;
+    border: 0px;
+    transition: all 0.2s ease-in;
+}
+
+.delete {
+    background: rgb(37, 37, 158);
+    color: white;
+    margin-top: 10px;
+    padding:10px 30px 10px 30px;
+    margin: 2.5rem 2.5rem 0rem 2.5rem;
+    border-radius: 10px;
+    border: 0px;
+    transition: all 0.2s ease-in;
+}
+
+.delete:hover {
+    background: rgb(165, 40, 40);
+    color: white;
+    margin-top: 10px;
+    padding:10px 40px 10px 40px;
+    margin: 2.5rem 1.5rem 0rem 1.5rem;
+    border-radius: 10px;
+    border: 0px;
+    transition: all 0.2s ease-in;
+}
+
+#h{
+    margin: 2.5rem 0 0.5rem 5.5rem;
+}
+
+#p{
+    margin: 0.5rem 0 0.5rem 5rem;
+}
+
+input[type=search] {
+    width: 89%;
+    float: right;
+    margin: 10px 10px 0 0;
+    background: white;
+}
+
+input[type=search]:hover {
+    width: 89%;
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+    background: white;
+}
+
+.row:after{
+    clear: both;
+    display: block;
+}

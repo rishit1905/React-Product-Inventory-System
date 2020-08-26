@@ -1,0 +1,77 @@
+#add form {
+    margin: 0.5rem;
+    padding: 1rem;
+    background: white;
+}
+
+#add fieldset legend {
+    font-size: x-large;
+}
+
+#add .columns {
+    margin-top: 1rem;
+}
+
+.error {
+    color: #db2269;
+    font-size: small;
+    display: block;
+}
+
+#add label {
+    all: unset;
+    text-align: left;
+}
+
+#add input[type=text], #add input[type=file] {
+    display: block;
+    text-align: left;
+    padding: 10px;
+    background: rgb(189, 188, 188);
+    border: 0px;
+    box-sizing: border-box;
+    width: 90rem;
+    margin: 0;
+    transition: all 0.4s ease-in;
+}
+
+#add button {
+    background: rgb(76, 76, 230);
+    color: white;
+    padding: 10px 30px 10px 30px;
+    border-radius: 10px;
+    border: 0px;
+    transition: all 0.2s ease-in;
+}
+
+#add button:hover {
+    background: rgb(37, 37, 158);
+    color: white;
+    padding: 10px 40px 10px 40px;
+    border-radius: 10px;
+    border: 0px;
+    transition: all 0.2s ease-in;
+}
+
+#add button:disabled {
+    background: rgb(38, 38, 44);
+    color: white;
+    padding: 10px 30px 10px 30px;
+    border-radius: 10px;
+    border: 0px;
+    transition: all 0.2s ease-in;
+}
+
+#add button:disabled:hover {
+    background: rgb(38, 38, 44);
+    color: white;
+    padding: 10px 40px 10px 40px;
+    border-radius: 10px;
+    border: 0px;
+    transition: all 0.2s ease-in;
+}
+
+#add:after {
+    clear: both;
+    height: 60px;
+}
